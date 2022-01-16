@@ -1,0 +1,15 @@
+0x1f5DAFCe869B711d4993e61a29905356606B3469
+
+bundleDrop: 0xF67775E2D92Ae0f6f174D84Fb9e6c05D726Dd030
+
+✅ Successfully deployed bundleDrop module, address: 0xF67775E2D92Ae0f6f174D84Fb9e6c05D726Dd030
+✅ bundleDrop metadata: {
+  metadata: {
+    name: 'YouthDAO Membership',     
+    description: 'A DAO for Youthful investors looking for VC type funds',
+    image: 'https://cloudflare-ipfs.com/ipfs/bafkreibblbz5xyjmhedyueqlxc3uhufqgt6djeipcxc4jxzbrvtn7lcbvq',     
+    primary_sale_recipient_address: '0x0000000000000000000000000000000000000000'
+  },
+  address: '0xF67775E2D92Ae0f6f174D84Fb9e6c05D726Dd030',
+  type: 11
+}
