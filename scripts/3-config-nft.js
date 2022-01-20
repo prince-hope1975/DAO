@@ -18,6 +18,6 @@ const bundleDrop = sdk.getBundleDropModule(
         console.log("✅ Successfully created a new NFT in the drop")
     }
     catch(e){
-        console.log("Failed to create the new NFT", e)
+        console.error("Failed to create the new NFT", e)
     }
 })()
