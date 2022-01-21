@@ -38,11 +38,11 @@ const App = () => {
 // just lik ewe did in the 7-airdrop-token.js file! Grab the users  who hold thee nft
 // with the token id of #0
     bundleDropModule.
-    getAllClaimerAddresses("0".
+    getAllClaimerAddresses("0").
     then(addresses=>{
       console.log("🚀 Members addresses", addresses)
       setMembersAddresses(addresses)
-    })).
+    }).
     catch(err=>{
       console.error("Failed to get member list", err)
     })
@@ -118,7 +118,7 @@ const App = () => {
   }
   if (hasClaimedNFT) {
     return (
-     <div classsName="member-page">
+     <div className="member-page">
        <h1>
          🎓 DAO member Page
          <p>Congratulations on being a member</p>
