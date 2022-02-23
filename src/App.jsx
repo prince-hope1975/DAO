@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from "react";
 import {ethers} from "ethers";
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
-import { id } from "ethers/lib/utils";
 const sdk = new ThirdwebSDK("rinkeby");
 
 const bundleDropModule = sdk.getBundleDropModule(

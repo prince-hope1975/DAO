@@ -14,8 +14,7 @@ bundleDrop: 0xF67775E2D92Ae0f6f174D84Fb9e6c05D726Dd030
   type: 11
 }
 
-bundleDrop address : 0x1f5DAFCe869B71
-1d4993e61a29905356606B3469
+bundleDrop address : 0x1f5DAFCe869B711d4993e61a29905356606B3469
 
 
 Successfully deployed token module, address 
