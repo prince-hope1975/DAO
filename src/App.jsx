@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { ethers } from "ethers";
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
+import {UnsupportedChainIdError} from "@web3-react/core"
 const sdk = new ThirdwebSDK("rinkeby");
 
 const bundleDropModule = sdk.getBundleDropModule(
@@ -139,6 +140,16 @@ const App = () => {
         console.error("failed to get nft balance", error);
       });
   }, [address]);
+  if(error instanceof UnsupportedChainIdError){
+    return (
+      <div className="unsupported-network">
+        <h2>Please connect to Rinkeby </h2>
+        <p>
+          This dapp only works on the Rinkeby network, please switch networks in your connected wallet and make sure you have rinkeby Eth
+        </p>
+      </div>
+    );
+  }
 
   if (!address) {
     return (
@@ -282,8 +293,7 @@ const App = () => {
                     : "Submit votes"}
                 </button>
                 <small>
-                  This will trigger multiple transactions that you will need to
-                  sign
+                  This will trigger multiple transactions please do well to sign all
                 </small>
               </form>
             </div>
