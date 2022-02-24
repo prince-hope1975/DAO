@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: monospace, Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #073c6d;
@@ -139,3 +139,4 @@ button:disabled {
   opacity: 0.8;
   pointer-events: none;
 }
+audio{display: none}

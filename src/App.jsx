@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 import { ethers } from "ethers";
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
@@ -31,6 +31,7 @@ const App = () => {
   const [proposals, setProposals] = useState([]);
   const [isVoting, setIsVoting] = useState(false);
   const [hasVoted, setHasVoted] = useState(false);
+  const ref = useRef(null)
 
   useEffect(async () => {
     if (!hasClaimedNFT) return;
@@ -140,6 +141,15 @@ const App = () => {
         console.error("failed to get nft balance", error);
       });
   }, [address]);
+  useEffect(()=>{
+    if(isVoting){
+      ref.current.currentTime = 0
+      ref?.current?.play()
+    }
+    else{
+      ref?.current?.pause()
+    }
+  }, [isVoting])
   if(error instanceof UnsupportedChainIdError){
     return (
       <div className="unsupported-network">
@@ -298,6 +308,11 @@ const App = () => {
               </form>
             </div>
           </div>
+        </div>
+        <div>
+          <audio ref={ref} autoPlay controls>
+            <source src="/ng.mp3" type="audio/mpeg"/>
+          </audio>
         </div>
       </div>
     );
