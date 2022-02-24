@@ -4,7 +4,7 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background-color: #073c6d;
   color: #fff;
   overflow-x: hidden;
 }
@@ -48,7 +48,7 @@ h1 {
 .member-page {
   flex-direction: column;
   width: 960px;
-  max-width: calc(100% - 1rem);
+  max-width: calc(100% - 2rem);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin: auto;
@@ -71,6 +71,7 @@ h1 {
   gap: 1rem;
 }
 @media screen and (max-width: 768px) {
+
   .member-page > div {
     flex-direction: column;
   }
@@ -109,9 +110,8 @@ h1 {
 .card {
   background-color: #fff;
   padding: 1rem;
-  border-radius: 1rem;
   color: #000;
-  box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4);
+  box-shadow: 3.1px 6.2px 1px black;
 }
 
 button {

@@ -16,6 +16,11 @@ bundleDrop: 0xF67775E2D92Ae0f6f174D84Fb9e6c05D726Dd030
 
 bundleDrop address : 0x1f5DAFCe869B711d4993e61a29905356606B3469
 
+Successfully deployed vote module, address: 
+
+0xD9833d35DB40beF03AfE5525f368CC3271FC3C0
+or
+0x8C562da3ADd93DF28b7817D8D38E77E9eaB35F98
 
 Successfully deployed token module, address 
 0xf04200aECf2ED125640180136014482bd4bB1Cf4

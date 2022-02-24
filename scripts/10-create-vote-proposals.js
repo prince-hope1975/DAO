@@ -3,7 +3,7 @@ import sdk from "./1-initialize-sdk.js";
 
 //Our voting contract
 const voteModule = sdk.getVoteModule(
-  "0x1f5DAFCe869B711d4993e61a29905356606B3469"
+  "0x8C562da3ADd93DF28b7817D8D38E77E9eaB35F98"
 );
 const tokenModule = sdk.getTokenModule(
   "0xf04200aECf2ED125640180136014482bd4bB1Cf4"
@@ -30,7 +30,7 @@ const tokenModule = sdk.getTokenModule(
                             ethers.utils.parseUnits(amount.toString(), 18)
                         ]
                     ),
-                    toAddress: tokenModule.addredss
+                    toAddress: tokenModule.address
                 }
             ]
         )
